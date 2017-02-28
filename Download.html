@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PORTFOLIO</title>  
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <style>
+ 
+ body
+ {
+   margin: 0 0 20px;
+ }
+  footer {
+    position: fixed;
+    bottom: 0;
+    height: auto;
+    background: blue;
+    width: 200%;
+  }
+
+h1 {
+	font-family: cursive;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+}
+
+p {
+	font-family: cursive;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
+}
+
+</style>
+</head>
+
+<body>
+	
+
+<header>
+   <h1 style="text-align:right;">PORTFOLIO:SUMIT BANSODE</h1>
+</header>
+  
+<nav>
+  <ul>
+    <li>
+    <p>
+     <a href="About.html">AboutMe</a><br>
+     <br>
+     <a href="Cover.html">CoverLetter</a><br>
+     <br>
+    <a href="Resume.html">Resume</a><br>
+    <br>
+    <a href="Contact.html">Contact Me</a><br>
+    <br>
+    <a href="js.html">JS</a><br>
+    <br>
+    <a href="#">Download</a><br>
+    </p>
+  </li>
+  </ul>
+</nav>
+
+<article>
+   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+  <style>
+  #draggable {
+    width: 100px;
+    height: 100px;
+    background: #ccc;
+  }
+  #droppable {
+    
+   width: 100px;
+    height: 100px;
+    background: #999;
+    color: #fff;
+    
+  }
+  </style>
+  <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+ 
+<div id="droppable">Drop here</div>
+<div id="draggable">Drag me to download resume</div>
+ 
+<script>
+$( "#draggable" ).draggable();
+$( "#droppable" ).droppable({
+  drop: function() {
+   var confirmed = confirm('Do you wish to download this PDF file?');
+if (confirmed){
+	window.open('Sumit_Resume.pdf');
+} else {
+	alert('download cancelled');
+}
+
+  }
+
+  
+}
+
+);
+
+</script>
+  
+<footer>
+  </footer>
+</div>
+</body>
+</html>

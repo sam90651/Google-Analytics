@@ -1,9 +1,10 @@
 /* style.css */
 
-div.container {
+.container {
     width: 100%;
     border: 4px solid black;
 }
+
 
 header
 {
